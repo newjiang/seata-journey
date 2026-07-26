@@ -1,0 +1,28 @@
+server:
+  port: 10003
+spring:
+  application:
+    name: seata-storage
+  config:
+    import:
+      - optional:nacos:seata-storage?group=DEFAULT_GROUP
+  cloud:
+    nacos:
+      # 服务发现配置
+      discovery:
+        server-addr: 172.31.18.86:8848
+        username: nacos
+        password: 123456
+        namespace: SEATA
+        group: DEFAULT_GROUP
+      # 配置中心配置
+      config:
+        server-addr: 172.31.18.86
+        username: nacos
+        password: 123456
+        namespace: SEATA
+        group: DEFAULT_GROUP
+        file-extension: yaml
+
+seata:
+  data-source-proxy-mode: XA

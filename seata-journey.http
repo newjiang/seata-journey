@@ -1,0 +1,11 @@
+### SEATA-AT-OK
+http://localhost:10001/seata/AT/ok/1
+
+### SEATA-AT-ERROR
+http://localhost:10001/seata/AT/ERROR/1
+
+### SEATA-XA-OK
+http://localhost:10001/seata/XA/ok/1
+
+### SEATA-XA-ERROR
+http://localhost:10001/seata/XA/ERROR/1
